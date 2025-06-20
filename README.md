@@ -1,6 +1,4 @@
 
-
-```
 # Face Recognition with Deep Learning Embeddings and SVM
 
 This project demonstrates a high-accuracy face recognition system built using Python. It leverages state-of-the-art deep learning models for feature extraction and a classic machine learning classifier for identification.
