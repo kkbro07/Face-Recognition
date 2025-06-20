@@ -1,17 +1,13 @@
-Here's your complete `README.md` file for the Face Recognition project, formatted properly in Markdown.
 
-You can copy-paste this into a file named `README.md` at the root of your project directory:
 
----
 
-```markdown
 # Face Recognition with Deep Learning Embeddings and SVM
 
 This project demonstrates a high-accuracy face recognition system built using Python. It leverages state-of-the-art deep learning models for feature extraction and a classic machine learning classifier for identification.
 
 The pipeline takes a dataset of labeled face images, trains a model to recognize these individuals, and provides a script to identify a person in a new, unseen image. With the current implementation using ArcFace embeddings and a tuned SVC, the system achieves ~94% accuracy on the test set.
 
----
+
 
 ## Table of Contents
 
