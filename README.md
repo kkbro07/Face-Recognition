@@ -50,27 +50,27 @@ The system uses a traditional ML pipeline with modern DL-based embeddings:
 ## Project Structure
 
 ```
-
-D:\AI\FACE RECOGNITION
-├── dataset/                    # Raw images (one folder per person)
+FACE-RECOGNITION/
+├── dataset/                  # Original dataset: one folder per person
 │   ├── Angelina Jolie/
 │   └── Brad Pitt/
-├── dataset\_train/              # Auto-generated training set
-├── dataset\_test/               # Auto-generated test set
-├── encoders/                   # Saved embeddings & trained model
-│   ├── face\_embeddings.npz
-│   └── face\_model\_tuned.joblib
-├── 01\_split\_dataset.py         # Dataset split logic
-├── 02\_create\_embeddings.py     # Embedding generation
-├── 03\_train\_model.py           # Model training (SVM)
-├── 04\_test\_model.py            # Evaluation on test set
-├── predict\_one\_image.py        # Predicts a single image
-├── utils.py                    # Helper functions
-└── README.md                   # This file
+│
+├── dataset_train/           # Auto-generated training set (from split)
+├── dataset_test/            # Auto-generated testing set (from split)
+│
+├── encoders/                # Stores face embeddings and trained SVM model
+│   ├── face_embeddings.npz
+│   └── face_model_tuned.joblib
+│
+├── 01_split_dataset.py      # Script to split the dataset into train/test
+├── 02_create_embeddings.py  # Extracts face embeddings using ArcFace
+├── 03_train_model.py        # Trains the SVM model with GridSearchCV
+├── 04_test_model.py         # Evaluates the model's accuracy on test set
+│
+├── predict_one_image.py     # Script to make a prediction on a single image
+├── utils.py                 # Utility functions (face detection, embedding, etc.)
+└── README.md                # Project documentation (this file)
 
-````
-
----
 
 ## Setup and Installation
 
