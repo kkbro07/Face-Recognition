@@ -6,7 +6,7 @@ import sys
 import os
 
 # Path to the image you want to test
-image_path = "dataset/Angelina Jolie/012_cfcd4007.jpg" # Use an image from your test set
+image_path = "dataset/Kate Winslet/001_5992faf7.jpg"# Use an image from your test set
 CONFIDENCE_THRESHOLD = 0.60  # You can likely lower this now
 
 # Check file exists
